@@ -1,6 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap');
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
+#hero{
+  
+}
+#hero img{
+  width: 100%;
+  z-index: -1;
+}
+#hero h1{
+  position: absolute;
+  color: white;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  white-space: nowrap;
+  text-align: center;
+  font-family: "Truculenta", sans-serif;
+  letter-spacing: 2px;
+  
+}
