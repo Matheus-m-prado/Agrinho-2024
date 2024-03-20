@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Terra Urbana: Oportunidades</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Do campo a cidade</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="assets/js/app.js" defer></script>
+	<script src="assets/bibliotecas/chuva.js" defer></script>
 </head>
 <body>
-  
-<header id="header">
 
-</header>
+	<div class="logo" style="background-image: url(img/logo.svg);"></div>
 
-<main id="main">
-  <div id="hero">
-    <h1>Descubra diferentes áreas <br> de oportunidades na cidade</h1>
-    <img src="assets/img/fundo.png" alt="background">
-  </div>
-</main>
+	<section class="layers">
+		<div class="layers__container">
+			<div class="layers__item layer-1" style="background-image: url(assets/img/layer-1.jpg);"></div>
+			<div class="layers__item layer-2" style="background-image: url(assets/img/layer-2.png);"></div>
+			<div class="layers__item layer-3">
+				<div class="hero-content">
+					<h1>Do campo a <span>cidade</span></h1>
+					<div class="hero-content__p">Colhendo oportunidades</div>
+					<button class="button-start">Vamos começar!</button>
+				</div>
+			</div>
+			<div class="layers__item layer-4">
+				<canvas class="rain"></canvas>
+			</div>
+			<div class="layers__item layer-5" style="background-image: url(img/layer-5.png);"></div>
+			<div class="layers__item layer-6" style="background-image: url(img/layer-6.png);"></div>
+		</div>
+	</section>
 
 </body>
 </html>
