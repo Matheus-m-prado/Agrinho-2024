@@ -102,7 +102,7 @@ header{
 	border-radius: 10px;
 	overflow: hidden;
 	height: 0;
-	transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	transition: height .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .dropdown-menu li{
 	padding: .7rem;
@@ -232,5 +232,12 @@ header{
 	}
 	.dropdown-menu{
 		display: block;
+	}
+}
+
+@media (max-width: 576px){
+	.dropdown-menu{
+		left: 2rem;
+		width: unset;
 	}
 }
