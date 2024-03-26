@@ -233,6 +233,10 @@ header{
 	.dropdown-menu{
 		display: block;
 	}
+	.hero-content__p,
+	.button-start{
+		font-size: 1rem;
+	}
 }
 
 @media (max-width: 576px){
