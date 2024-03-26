@@ -31,11 +31,13 @@ a{
 	color: #fff;
 	cursor: pointer;
 }
+
 /* HEADER */
 header{
 	position: relative;
 	padding: 0 2rem;
 	z-index: 100000;
+	user-select:none
 }
 .navbar{
 	position: absolute;
@@ -166,6 +168,7 @@ header{
 	letter-spacing: calc(var(--index) * -.15);
 	line-height: 1.35em;
 	margin-top: calc(var(--index) * 5.5);
+	user-select:none
 }
 .hero-content span {
 	display: block;
