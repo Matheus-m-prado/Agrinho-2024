@@ -196,6 +196,10 @@ header{
 .button-start:hover{
 	border: #88fc04 3px solid;
 	padding: 15px 40px;
+	scale: 1.1;
+}
+.button-start:active{
+	scale: 0.9;
 }
 .layer-4, .layer-5, .layer-6 {
 	pointer-events: none;
@@ -237,11 +241,18 @@ header{
 	.button-start{
 		font-size: 1rem;
 	}
+	.hero-content h1{
+		font-size: 4rem;
+		line-height: 60px;
+	}
 }
 
 @media (max-width: 576px){
 	.dropdown-menu{
 		left: 2rem;
 		width: unset;
+	}
+	.hero-content h1{
+		font-size: 3.5rem;
 	}
 }
