@@ -1,0 +1,123 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	cursor: default;
+}
+:root {
+	--index: calc(1vw + 1vh);
+	--transition: 1.5s cubic-bezier(.05, .5, 0, 1);
+	--verde-claro: #88fc04;
+}
+@font-face {
+	font-family: kamerik-3d;
+	src: url(../fonts/kamerik205-heavy.woff2);
+	font-weight: 900;
+}
+@font-face {
+	font-family: merriweather-italic-3d;
+	src: url(../fonts/merriweather-regular-italic.woff2);
+}
+body {
+	color: #fff;
+	font-family: kamerik-3d;
+	overflow-x: hidden;
+}
+
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+	cursor: pointer;
+}
+
+/* HEADER */
+header{
+	position: relative;
+	padding: 0 2rem;
+	z-index: 100000;
+	user-select:none
+}
+.navbar{
+	position: absolute;
+	width: 100%;
+	height: 60px;
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	letter-spacing: 1px;
+}
+
+.navbar .logo a{
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+.navbar .links{
+	display: flex;
+	gap: 2rem;
+}
+.navbar .links li{
+	transition: all .2s ease;
+}
+.navbar .links li:hover{
+	scale: 1.2;
+}
+.navbar .toggle-btn{
+	display: none;
+	color: #fff;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+.action-btn{
+	background-color: #509600;
+	color: #fff;
+	padding: 0.5rem 1rem;
+	border: none;
+	outline: none;
+	border-radius: 10px;
+	font-size: .8rem;
+	font-weight: bold;
+	cursor: pointer;
+	transition: scale .3s ease;
+}
+.action-btn:hover{
+	scale: 1.1;
+	color: #fff;
+}
+.action-btn:active{
+	scale: 0.95;
+}
+
+/* DROPDOWN MENU */
+.dropdown-menu{
+	display: none;
+	position: absolute;
+	right: 2rem;
+	top: 60px;
+	width: 300px;
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(15px);
+	border-radius: 10px;
+	overflow: hidden;
+	height: 0;
+	transition: height .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown-menu li{
+	padding: .7rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.dropdown-menu .action-btn{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.dropdown-menu.open{
+	height: 240px;
+}
