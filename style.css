@@ -196,7 +196,7 @@ header{
 	cursor: pointer;
 	margin-top: calc(var(--index) * 2.5);
 	transition: all .3s ease;
-	animation: pulsar .5s infinite alternate;
+	animation: pulsar .8s infinite alternate;
 }
 .button-start:hover{
 	border: #88fc04 3px solid;
