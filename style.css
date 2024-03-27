@@ -7,6 +7,7 @@
 :root {
 	--index: calc(1vw + 1vh);
 	--transition: 1.5s cubic-bezier(.05, .5, 0, 1);
+	--verde-claro: #88fc04;
 }
 @font-face {
 	font-family: kamerik-3d;
